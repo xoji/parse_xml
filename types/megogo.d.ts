@@ -43,7 +43,7 @@ export interface MegogoIframe {
     scrolling: string;
     allowfullscreen: "true" | "false";
     allow: string;
-};
+}
 
 export interface MegogoPrice {
     price: string;
@@ -52,14 +52,14 @@ export interface MegogoPrice {
     service_id: string;
     currency: string;
     watch_period: string;
-};
+}
 
 export type MegogoVod = "svod" | "advod" | "announce" | "fvod" | "tvod" | "dto";
 
 export interface MegogoDistribution {
     vod_type: MegogoVod;
     price: MegogoPrice[];
-};
+}
 
 export interface MegogoSeria {
     id: string;
@@ -71,7 +71,7 @@ export interface MegogoSeria {
     qualities: {
         quality: MegogoQuality | MegogoQuality[];
     }
-  }
+}
 
 export interface MegogoSeason {
     id: "10284185",
@@ -151,5 +151,5 @@ export interface MegogoObject {
         subtitle_lang: string[]
     }
     season?: MegogoSeason | MegogoSeason[];
-  };
+  }
 
